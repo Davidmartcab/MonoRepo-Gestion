@@ -1,0 +1,49 @@
+@import "./variables.scss";
+
+.error {
+    background-color: $resalt;
+    max-width: 1200px;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+    &__header {
+        font-weight: bold;
+        font-size: 2rem;
+        color: $primary;
+        padding: 10px 0;
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__text {
+            font-size: 1.5rem;
+            color: $primary;
+            padding: 10px 0;
+            cursor: default;
+        }
+
+        &__link {
+            font-size: 1.5rem;
+            color: $secunday;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            background-color: $resalt2;
+            
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}

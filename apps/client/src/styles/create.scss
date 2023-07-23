@@ -1,0 +1,161 @@
+@import "./variables.scss";
+
+.create {
+    background-color: $resalt;
+    max-width: 1200px;
+    width: 80 dvw;
+    width: 80vw;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        &__title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $primary;
+            cursor: default;
+        }
+
+        &__button {
+            background-color: $primary;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border: none;
+            color: $resalt;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                scale: .9;
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        &__error {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: rgb(255, 159, 159);
+            cursor: default;
+            text-align: center;
+        }
+
+        &__names {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            &__name {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+
+                &__text {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: $primary;
+                    cursor: default;
+                }
+
+                &__button {
+                    background-color: red;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    border: none;
+                    color: $resalt;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        scale: .9;
+                    }
+                }
+            }
+
+        }
+
+        &__forNames {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            &__button {
+                background-color: greenyellow;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                border: none;
+                color: $resalt;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    scale: .9;
+                }
+            }
+        }
+
+        &__input {
+            width: calc(100% - 20px);
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid $primary;
+            padding: 0 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $secunday;
+        }
+
+        &__button {
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: $primary;
+            color: $resalt;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}
