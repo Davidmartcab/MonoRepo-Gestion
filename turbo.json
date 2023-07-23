@@ -9,7 +9,7 @@
         "^build"
       ],
       "outputs": [
-        "public/**"
+        "dist/**"
       ]
     }
   }
